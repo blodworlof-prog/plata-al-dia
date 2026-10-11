@@ -1,0 +1,83 @@
+PLATA AL DÍA · versión 2.0 · cómo ponerla en tu celular como app
+================================================================
+
+Qué hay en esta carpeta
+- index.html           la app (todo el código está aquí)
+- manifest.webmanifest y sw.js   hacen que se pueda instalar y abrir sin internet
+- icon-192.png, icon-512.png, icon-maskable-512.png, apple-touch-icon.png   el ícono de la app
+
+Importante: la app solo se puede instalar si está publicada en internet con https.
+Abrir index.html desde los archivos del celular NO sirve para instalarla.
+Todos los archivos van sueltos, uno al lado del otro, sin carpetas. No subas el ZIP: sube los archivos de adentro.
+
+
+CUENTAS (Trabajo, Personal, las que quieras)
+- Arriba, toca "Plata al Día / Trabajo" para cambiar de cuenta, crear una nueva o editarla.
+- Cada cuenta tiene sus propios gastos, ingresos, metas, presupuesto y racha. No se mezclan.
+- Vienen dos cuentas: Trabajo y Personal. Puedes renombrarlas, cambiarles el color o crear hasta 8.
+- Al eliminar una cuenta se borran sus datos. Tienes unos segundos para tocar "Deshacer".
+
+
+OPCIÓN A · Netlify (la más rápida, desde una computadora)
+1. Descomprime el ZIP.
+2. Entra a https://app.netlify.com/drop
+3. Arrastra la carpeta descomprimida a la página.
+4. Crea una cuenta gratis cuando te lo pida. Sin cuenta, Netlify puede borrar el sitio al rato.
+5. Netlify te da un enlace tipo https://algo.netlify.app. Ese es el enlace de tu app.
+
+
+OPCIÓN B · GitHub Pages (gratis)
+1. Crea una cuenta en https://github.com y un repositorio nuevo, público, llamado plata-al-dia.
+2. Sube los 8 archivos sueltos con "uploading an existing file" o "Add file > Upload files". Toca "Commit changes".
+3. Entra a Settings > Pages. En "Branch" elige main y la carpeta / (root). Guarda.
+4. Espera uno o dos minutos. Tu enlace será https://TU-USUARIO.github.io/plata-al-dia/
+
+
+INSTALARLA EN EL CELULAR
+Android (Chrome)
+1. Abre el enlace de tu app en Chrome.
+2. Toca "Instalar app" (sale en Hoy y en Ajustes), o el menú ⋮ > Instalar app / Añadir a pantalla de inicio.
+3. Ábrela desde el ícono nuevo. Ya funciona sin internet.
+
+iPhone (Safari)
+1. Abre el enlace en Safari (no en otro navegador).
+2. Toca Compartir > Añadir a pantalla de inicio.
+
+
+ACTUALIZAR LA APP MÁS ADELANTE (nuevas funciones)
+Es fácil, y tus datos no se pierden:
+1. Te paso los archivos nuevos (casi siempre solo cambia index.html y sw.js).
+2. En tu repositorio de GitHub: "Add file > Upload files", arrastra los archivos nuevos.
+   Los que tienen el mismo nombre reemplazan a los anteriores. Toca "Commit changes".
+   (En Netlify: arrastra de nuevo la carpeta completa a tu sitio, en la pestaña Deploys.)
+3. En 1 o 2 minutos GitHub publica la versión nueva.
+4. En el celular, abre la app con internet. Se actualiza sola. Si ves la versión anterior,
+   ciérrala del todo y ábrela otra vez (a veces tarda unos minutos).
+5. Para comprobar la versión: Ajustes, al final de la pantalla dice "versión 2.0.0".
+
+Tus datos siguen ahí porque están guardados en tu celular y cada versión nueva convierte
+sola los datos anteriores al formato nuevo.
+
+Cuidado con esto:
+- No cambies el nombre del repositorio ni de tu usuario de GitHub: cambia el enlace y la app
+  nueva empezaría vacía (los datos van ligados al enlace). Si algún día cambias de enlace,
+  antes guarda una copia en Ajustes y luego restáurala en el enlace nuevo.
+- Guarda este ZIP o tu repositorio: es tu app. Cuando quieras otro cambio, súbeme index.html
+  (o este ZIP) en la conversación y te devuelvo los archivos actualizados.
+- Si cambias algo tú mismo, sube también el número de VERSION en sw.js
+  (por ejemplo plata-al-dia-v3) para que los celulares descarguen todo de nuevo.
+
+
+AVISOS A LAS 1:00, 6:00, 9:30 Y 11:00 PM
+Un celular solo programa avisos a hora fija desde el calendario.
+En la app ve a Ajustes > Guardar recordatorios (.ics) y ábrelo con tu calendario.
+Crea 4 eventos diarios con alerta y un enlace para anotar. Si tu calendario no mantiene la
+alerta, ponla "a la hora del evento".
+
+
+TUS DATOS
+- Se guardan solo en tu celular, de todas las cuentas juntas. Si borras los datos del navegador, se pierden.
+- En Ajustes > Guardar copia (.json) descargas una copia con todas tus cuentas. Hazlo de vez en cuando.
+- Para pasar tus datos a otro celular o recuperarlos: Ajustes > Restaurar copia.
+- Las copias de la versión 1 también se pueden restaurar: pasan a la cuenta Trabajo.
+- Exportar gastos (CSV) incluye todas las cuentas, con una columna "Cuenta".
